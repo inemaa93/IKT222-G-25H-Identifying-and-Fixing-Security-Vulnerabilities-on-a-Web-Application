@@ -60,7 +60,7 @@ Use https://localhost:8443 in your browser (expect a self-signed certificate war
 
 ---
 
-Lessons Learned
+## Lessons Learned
 
 Secure coding practices and OWASP guidelines are essential
 
@@ -72,4 +72,4 @@ Proper error handling and logging help with monitoring and incident response
 
 ---
 
-This project was made with the help of ChatGPT.
+## This project was made with the help of ChatGPT.
