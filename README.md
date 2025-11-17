@@ -28,34 +28,40 @@ Vulnerabilities were discovered through:
 
 ## Fixes Implemented
 
-1. **HTTPS Enforcement**
+**HTTPS Enforcement**
    - All HTTP traffic is redirected to HTTPS (Jetty configured with a self-signed certificate)
    - Session cookies are set with `Secure`, `HttpOnly`, and `SameSite` attributes
    - Prevents credential interception and man-in-the-middle attacks
 
-2. **Password Hashing**
+**Password Hashing**
    - SHA-256 hashing implemented for password storage
    - Existing plaintext passwords converted to hashed values
    - Prevents unauthorized access even if the database is compromised
+
+---
 
 ## Getting Started
 
 1. Install **Java SE Development Kit 11.0.18** (or newer)
 2. Clone the repository:
+   
    ```bash
    git clone https://github.com/inemaa93/IKT222-G-25H-Identifying-and-Fixing-Security-Vulnerabilities-on-a-Web-Application.git
-Navigate to the project folder and run:
+   
+3. Navigate to the project folder and run:
 
-bash
-Kopier kode
 ./gradlew run   # or gradlew.bat run on Windows
-Access the application:
+
+4. Access the application:
 
 HTTP requests on port 8080 will redirect to HTTPS on port 8443
 
 Use https://localhost:8443 in your browser (expect a self-signed certificate warning)
 
+---
+
 Lessons Learned
+
 Secure coding practices and OWASP guidelines are essential
 
 Always use HTTPS for sensitive data
